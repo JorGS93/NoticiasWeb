@@ -2,13 +2,13 @@
 	"news": [{
 
 		"titulo": "HOLAHOLAHOLAHOLAHOLA",
-		"foto1": "img/floki.jpg",
+		"foto": "img/floki.jpg",
 		"fecha": "",
 		"texto": "",
 	}, {
 
 		"titulo": "HOLAHOLAHOLAHOLAHOLA",
-		"foto1": "img/floki.jpg",
+		"foto": "img/floki.jpg",
 		"fecha": "",
 		"texto": "",
 	}]
