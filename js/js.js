@@ -22,6 +22,6 @@ $('#boton').hide();
 
      function ponerTitulo(json){
   $.each( json, function( i, empleado ) {
-    $("#titulo").append(noticias.titulo);
+    $("#titulo").append(news.titulo);
   }); 
 }
