@@ -26,6 +26,6 @@ $('#boton').hide();
      function ponerTitulo(json){
   $.each( json, function( i, news ) {
     $("#titulo").append(news[0].titulo);
+  });
   }
-  }); 
 
