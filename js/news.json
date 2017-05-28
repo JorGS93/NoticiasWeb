@@ -2,7 +2,7 @@
 	"news": [{
 
 		"titulo": "HOLAHOLAHOLAHOLAHOLA",
-		"foto": "img/csgo.jpg",
+		"img": "img/csgo.jpg",
 		"fecha": "",
 		"texto": ""
 	}, {
