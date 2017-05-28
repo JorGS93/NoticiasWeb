@@ -2,7 +2,7 @@
 	"news": [{
 
 		"titulo": "HOLAHOLAHOLAHOLAHOLA",
-		"img": "https://rawgit.com/JorGS93/NoticiasWeb/master/img/messi.jpg",
+		"img": "img/csgo.jpg",
 		"fecha": "",
 		"descripcion": "praprparpapraprpa"
 	}, {
@@ -14,14 +14,14 @@
 	},{
 
 		"titulo": "HOLAHOLAHOLAHOLAHOLA",
-		"img": "https://github.com/JorGS93/NoticiasWeb/blob/master/img/csgo.jpg",
+		"img": "img/csgo.jpg",
 		"fecha": "",
 		"descripcion": ""
 
 	},{
 
 		"titulo": "HOLAHOLAHOLAHOLAHOLA",
-		"img": "https://github.com/JorGS93/NoticiasWeb/blob/master/img/csgo.jpg",
+		"img": "img/csgo.jpg",
 		"fecha": "",
 		"descripcion": ""
 
