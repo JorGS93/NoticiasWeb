@@ -8,20 +8,20 @@
 	}, {
 
 		"titulo": "HOLAHOLAHOLAHOLAHOLA",
-		"foto": "img/csgo.jpg",
+		"img": "img/csgo.jpg",
 		"fecha": "",
 		"texto": ""
 	},{
 
 		"titulo": "HOLAHOLAHOLAHOLAHOLA",
-		"foto": "https://github.com/JorGS93/NoticiasWeb/blob/master/img/csgo.jpg",
+		"img": "https://github.com/JorGS93/NoticiasWeb/blob/master/img/csgo.jpg",
 		"fecha": "",
 		"texto": ""
 
 	},{
 
 		"titulo": "HOLAHOLAHOLAHOLAHOLA",
-		"foto": "https://github.com/JorGS93/NoticiasWeb/blob/master/img/csgo.jpg",
+		"img": "https://github.com/JorGS93/NoticiasWeb/blob/master/img/csgo.jpg",
 		"fecha": "",
 		"texto": ""
 
