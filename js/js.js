@@ -8,7 +8,7 @@ $('#mainNav').affix({
 
 
 $(document).ready(function(){
-	$.getJSON( "js/news.json", function( jsonObject ) {
+	$.getJSON( "news.json", function( jsonObject ) {
     console.log(jsonObject);
      crearNoticia( jsonObject );
 	});
