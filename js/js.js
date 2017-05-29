@@ -31,7 +31,7 @@ function crearNoticia(json) {
     $.each(json, function (i, news) {
 
 
-        //for (i = 0; i < 3; i++) {
+        for (i = 0; i < 4; i++) {
 
         var div = document.createElement("div");
         div.className = "container noticias";
@@ -91,7 +91,7 @@ function crearNoticia(json) {
         titdiv.className = "descripcion";
          titdiv.textContent = json[i].descripcion;
         tumb.appendChild(titdiv);
-
+	}
     })};
 
 
