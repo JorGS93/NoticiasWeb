@@ -11,7 +11,6 @@ $(document).ready(function(){
 	$.getJSON( "js/news.json", function( jsonObject ) {
     console.log(jsonObject);
      crearNoticia( jsonObject );
-     crearNoticia2(jsonObject);
 	});
 
 
@@ -63,18 +62,8 @@ function crearNoticia(json) {
         titdiv.className = "descripcion";
         titdiv.textContent = json[0].descripcion;
         tumb.appendChild(titdiv);
-	
-    })};
-
-
-function crearNoticia2(json) {
-
-      var mas=document.getElementById("cargarNoticias");
-
-
-    $.each(json, function (i, news) {
 	    
- var col2 = document.createElement("div");
+	    var col2 = document.createElement("div");
         col2.className = "col-md-4 noticia2";
         mas.appendChild(col2);
         div.appendChild(col2);
@@ -100,6 +89,8 @@ function crearNoticia2(json) {
          titdiv.textContent = json[1].descripcion;
         tumb.appendChild(titdiv);
 
-
 	
     })};
+
+
+
