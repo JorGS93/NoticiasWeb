@@ -64,18 +64,7 @@ function crearNoticia(json) {
         tumb.appendChild(titdiv);
 	    
 	    
-	    
-
-    })};
-
-
-function crearNoticia2(json) {
-
-      var mas=document.getElementById("cargarNoticias");
-
-
-    $.each(json, function (i, news) {
-
+	 
 	    var col2 = document.createElement("div");
         col2.className = "col-md-4 noticia2";
         mas.appendChild(col2);
@@ -101,5 +90,10 @@ function crearNoticia2(json) {
         titdiv.className = "descripcion";
          titdiv.textContent = json[i].descripcion;
         tumb.appendChild(titdiv);
+	    
+	
+   
 
     })};
+
+
