@@ -11,7 +11,6 @@ $(document).ready(function(){
 	$.getJSON( "js/news.json", function( jsonObject ) {
     console.log(jsonObject);
      crearNoticia( jsonObject );
-		crearNoticia2(jsonObject); 
 	});
 
 
@@ -48,21 +47,22 @@ function crearNoticia(json) {
         //pintar titulo
         var titulo = document.createElement("p");
         titulo.className = "titulo";
-        titulo.textContent = json[0].titulo;
+        titulo.textContent = json[i].titulo;
         tumb.appendChild(titulo);
 
         //poner foto
         var img = document.createElement("img");
         img.className = "img-responsive fotos";
-        img.src = json[0].img;
+        img.src = json[i].img;
         img.alt = "Imagen cargada";
         tumb.appendChild(img);
 
         //poner descripcion
         var titdiv = document.createElement("p");
         titdiv.className = "descripcion";
-        titdiv.textContent = json[0].descripcion;
+        titdiv.textContent = json[i].descripcion;
         tumb.appendChild(titdiv);
+	    
 	    
 	    
 
@@ -88,18 +88,18 @@ function crearNoticia2(json) {
 
         var titulo = document.createElement("p");
         titulo.className = "titulo";
-	titulo.textContent = json[1].titulo;
+	titulo.textContent = json[i].titulo;
         tumb.appendChild(titulo);
 
         var img = document.createElement("img");
         img.className = "img-responsive fotos";
-        img.src = json[1].img;
+        img.src = json[i].img;
         img.alt = "Imagen cargada";
         tumb.appendChild(img);
 
        var titdiv = document.createElement("p");
         titdiv.className = "descripcion";
-         titdiv.textContent = json[1].descripcion;
+         titdiv.textContent = json[i].descripcion;
         tumb.appendChild(titdiv);
 
     })};
