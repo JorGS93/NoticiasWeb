@@ -11,6 +11,7 @@ $(document).ready(function(){
 	$.getJSON( "js/news.json", function( jsonObject ) {
     console.log(jsonObject);
      crearNoticia( jsonObject );
+     crearNoticia2(jsonObject);
 	});
 
 
@@ -47,24 +48,33 @@ function crearNoticia(json) {
         //pintar titulo
         var titulo = document.createElement("p");
         titulo.className = "titulo";
-        titulo.textContent = json[i].titulo;
+        titulo.textContent = json[0].titulo;
         tumb.appendChild(titulo);
 
         //poner foto
         var img = document.createElement("img");
         img.className = "img-responsive fotos";
-        img.src = json[i].img;
+        img.src = json[0].img;
         img.alt = "Imagen cargada";
         tumb.appendChild(img);
 
         //poner descripcion
         var titdiv = document.createElement("p");
         titdiv.className = "descripcion";
-        titdiv.textContent = json[i].descripcion;
+        titdiv.textContent = json[0].descripcion;
         tumb.appendChild(titdiv);
+	
+    })};
 
 
-        var col2 = document.createElement("div");
+function crearNoticia2(json) {
+
+      var mas=document.getElementById("cargarNoticias");
+
+
+    $.each(json, function (i, news) {
+	    
+ var col2 = document.createElement("div");
         col2.className = "col-md-4 noticia2";
         mas.appendChild(col2);
         div.appendChild(col2);
@@ -76,22 +86,20 @@ function crearNoticia(json) {
 
         var titulo = document.createElement("p");
         titulo.className = "titulo";
-	titulo.textContent = json[i+1].titulo;
+	titulo.textContent = json[1].titulo;
         tumb.appendChild(titulo);
 
         var img = document.createElement("img");
         img.className = "img-responsive fotos";
-        img.src = json[i+1].img;
+        img.src = json[1].img;
         img.alt = "Imagen cargada";
         tumb.appendChild(img);
 
        var titdiv = document.createElement("p");
         titdiv.className = "descripcion";
-         titdiv.textContent = json[i+1].descripcion;
+         titdiv.textContent = json[1].descripcion;
         tumb.appendChild(titdiv);
+
+
 	
     })};
-
-
-
-
