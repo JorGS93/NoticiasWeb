@@ -8,13 +8,14 @@ $('#mainNav').affix({
 
 
 $(document).ready(function(){
-	$.getJSON( "https://rawgit.com/JorGS93/NoticiasWeb/master/js/news.json", function( jsonObject ) {
-     ponerTitulo( jsonObject );
+	$.getJSON( "js/news.json", function( jsonObject ) {
+    console.log(jsonObject);
+     crearNoticia( jsonObject );
 	});
 
 
 $('#boton').click(function(event) {
-$('#cajon2').show(500);
+$('#cargarNoticias').show(500);
 $('#boton').hide();
 });
 
@@ -22,10 +23,76 @@ $('#boton').hide();
 
 
 
+function crearNoticia(json) {
 
-     function ponerTitulo(json){
-  $.each( json, function( i, news ) {
-    $("#titulo").append(news[0].titulo);
-  });
-  }
+      var mas=document.getElementById("cargarNoticias");
+
+
+    $.each(json, function (i, news) {
+
+
+        //for (i = 0; i < 3; i++) {
+
+        var div = document.createElement("div");
+        div.className = "container noticias";
+        mas.appendChild(div);
+
+        var col1 = document.createElement("div");
+        col1.className = "col-md-4 noticia1";
+        mas.appendChild(col1);
+        div.appendChild(col1);
+
+        var tumb = document.createElement("div");
+        tumb.className = "thumbnail imgtxt";
+        col1.appendChild(tumb);
+
+        //pintar titulo
+        var titulo = document.createElement("p");
+        titulo.className = "titulo";
+        titulo.textContent = json[i].titulo;
+        tumb.appendChild(titulo);
+
+        //poner foto
+        var img = document.createElement("img");
+        img.className = "img-responsive fotos";
+        img.src = json[i].img;
+        img.alt = "Imagen cargada";
+        tumb.appendChild(img);
+
+        //poner descripcion
+        var titdiv = document.createElement("p");
+        titdiv.className = "descripcion";
+        titdiv.textContent = json[i].descripcion;
+        tumb.appendChild(titdiv);
+
+
+        var col2 = document.createElement("div");
+        col2.className = "col-md-4 noticia2";
+        mas.appendChild(col2);
+        div.appendChild(col2);
+
+
+        var tumb = document.createElement("div");
+        tumb.className = "thumbnail imgtxt";
+        col2.appendChild(tumb);
+
+        var titulo = document.createElement("p");
+        titulo.className = "titulo";
+        tumb.appendChild(titulo);
+
+        var img = document.createElement("img");
+        img.className = "img-responsive fotos";
+        img.src = json[i].img;
+        img.alt = "Imagen cargada";
+        tumb.appendChild(img);
+
+       var titdiv = document.createElement("p");
+        titdiv.className = "descripcion";
+         titdiv.textContent = json[i].descripcion;
+        tumb.appendChild(titdiv);
+
+    })};
+
+
+
 
