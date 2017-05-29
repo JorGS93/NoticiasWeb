@@ -67,7 +67,7 @@ function crearNoticia(json) {
 
 
         var col2 = document.createElement("div");
-        col2.className = "col-md-4 noticia2";
+        col2.className = "col-md-4 noticia1";
         mas.appendChild(col2);
         div.appendChild(col2);
 
