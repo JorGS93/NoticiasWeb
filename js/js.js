@@ -76,18 +76,18 @@ function crearNoticia(json) {
 
         var titulo = document.createElement("p");
         titulo.className = "titulo";
-	titulo.textContent = json[i].titulo;
+	titulo.textContent = json[i+1].titulo;
         tumb.appendChild(titulo);
 
         var img = document.createElement("img");
         img.className = "img-responsive fotos";
-        img.src = json[i].img;
+        img.src = json[i+1].img;
         img.alt = "Imagen cargada";
         tumb.appendChild(img);
 
        var titdiv = document.createElement("p");
         titdiv.className = "descripcion";
-         titdiv.textContent = json[i].descripcion;
+         titdiv.textContent = json[i+1].descripcion;
         tumb.appendChild(titdiv);
 	
     })};
