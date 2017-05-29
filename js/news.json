@@ -3,27 +3,27 @@
 
 		"titulo": "AAAAAAAAA",
 		"img": "img/csgo.jpg",
-		"fecha": "",
+		"fecha": "XX/XX/XXXX",
 		"descripcion": "praprparpapraprpa"
 	}, {
 
 		"titulo": "BBBBBBBBBB",
 		"img": "img/floki.jpg",
-		"fecha": "",
-		"descripcion": ""
+		"fecha": "XX/XX/XXXX",
+		"descripcion": "praprparpapraprpa"
 	},{
 
 		"titulo": "CCCCCCCCCCC",
 		"img": "img/csgo.jpg",
-		"fecha": "",
-		"descripcion": ""
+		"fecha": "XX/XX/XXXX",
+		"descripcion": "praprparpapraprpa"
 
 	},{
 
 		"titulo": "DDDDDDDDDDD",
 		"img": "img/floki.jpg",
-		"fecha": "",
-		"descripcion": ""
+		"fecha": "XX/XX/XXXX",
+		"descripcion": "praprparpapraprpa"
 
 	}]
 	
